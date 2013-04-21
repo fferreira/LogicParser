@@ -1,5 +1,11 @@
-_build      # ocamlbuild build directory
-*.native    # natitve executable
-*.byte      # byte-code executable
+# ocamlbuild build directory
+_build
 
-*~          # emacs backup files
+# natitve executable
+*.native
+
+# byte-code executable
+*.byte
+
+# emacs backup files
+*~          
