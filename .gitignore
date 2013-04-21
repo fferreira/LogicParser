@@ -1,11 +1,16 @@
-# ocamlbuild build directory
-_build
+# ocamlbuild directory
 
-# natitve executable
+/_build
+
+# executables 
+
 *.native
-
-# byte-code executable
 *.byte
 
-# emacs backup files
-*~          
+# Emacs backup files
+*~
+.*~
+*.*~
+
+# MacOS file
+.DS_Store
