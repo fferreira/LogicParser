@@ -21,6 +21,12 @@ open Syntax
 
 %token <string> WHAT
 
+%left OR
+%left AND
+%right IMP
+
+%nonassoc NOT
+
 %start <Syntax.prop list> props
 
 %%
@@ -40,3 +46,4 @@ prop :
 props : 
 | EOF { [] }
 | p = prop SEMICOLON ps=props { p :: ps }
+| error SEMICOLON ps=props { What "Imposible to parse proposition (continuing, this is a really bad idea for error handling)..." :: ps }

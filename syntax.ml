@@ -23,5 +23,5 @@ let rec to_string e = match e with
 | Imp (p1, p2) -> "(" ^ to_string p1 ^ " ⊃ " ^ to_string p2 ^ ")"
 | Forall (v, p) -> "∀" ^ v ^ "." ^ to_string p
 | Exists (v, p) -> "∃" ^ v ^ "." ^ to_string p
-| What s -> "Unrecognized: " ^ s
+| What s -> "Error: " ^ s
 
